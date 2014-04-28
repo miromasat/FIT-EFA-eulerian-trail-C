@@ -41,16 +41,13 @@ public:
 
 bool CGraph::validateEdge(int a, int b)
 {
-	bool res = false;
-
 	for (unsigned int i = 0; i < m_edges[a].size(); ++i)
 	{
 		if (m_edges[a][i] == b)
 			return true;
 	}
 		
-	
-	return res;
+	return false;
 }
 
 void CGraph::deleteEdge(int a, int b)
